@@ -450,6 +450,9 @@ message ExecuteSqlRequest {
     //
     // The `optimizer_version` statement hint has precedence over this setting.
     string optimizer_version = 1;
+
+    // Statistics package to use. Empty to use the database default.
+    string optimizer_statistics_package = 2;
   }
 
   // Mode in which the statement must be processed.
